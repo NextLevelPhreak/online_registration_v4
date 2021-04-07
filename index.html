@@ -13,7 +13,59 @@
         <h1>THE CODE REVIEW</h1>
       </header>
     <h2>Signup for our newsletter</h2>
-    <div class="title-text">Get the latest news on how your code is doing right in your inbox.</div>
+    <div class="title-text">Get the latest news on how your code is doing right in your inbox</div>
     <hr class="hr1">
     <hr class="hr2">
+    <form>
+      <fieldset>
+        <section class="contact-information">Contact Information</section>
+            <label class="information" for="name">Full Name</label>
+            <input type="text" placeholder="Required" id="name" name="user_name">
+            <label class="information" for="email-address">Email Address</label>
+            <input type="text" placeholder="Required" id="email-address" name="user_email_address">
+            <label class="information" for="phone-number">Phone Number</label>
+            <input type="text" id="phone-number" name="user_number">
+            <label class="information" for="street-address">Street Address</label>
+            <input type="text" id="street-address" name="user_street_address">
+            <label class="information" for="city">City</label>
+            <input type="text" id="city" name="user_city">
+            <label class="information" for="province">Province</label>
+            <select name="province" style="height:50px" id="province">
+              <option value="alberta">Alberta</option>
+              <option value="british-columbia">British Columbia</option>
+              <option value="manitoba">Manitoba</option>
+              <option value="new-brunswick">New Brunswick</option>
+              <option value="newfoundland-and-labrador">Newfoundland and Labrador</option>
+              <option value="nova-scotia">Nova Scotia</option>
+              <option value="ontario">Ontario</option>
+              <option value="prince-edward-island">Prince Edward Island</option>
+              <option value="quebec">Quebec</option>
+              <option value="saskatchewan">Saskatchewan</option>
+              <option value="northwest-territories">Northwest Territories</option>
+              <option value="nunavut">Nunavut</option>
+              <option value="yukon">Yukon</option>
+            </select>
+            <label class="information" for="zip">Zip Code</label>
+            <input class="zip-code" type="text" id="zip" name="user_zip">
+          </fieldset>
+          </section>
+          <hr class="hr3">
+          <fieldset>
+          <section class="newsletter">Newsletter</section>
+          <div class="newsletter-text">Select the newsletters you would like to recieve</div>
+          <input type="checkbox" id="html-news" name="news" value="HTML">
+            <label class="newsletter-label" for="html-news"> HTML News</label><br>
+            <input type="checkbox" id="css-news" name="news" value="CSS">
+            <label class="newsletter-label" for="css-news"> CSS News</label><br>
+            <input type="checkbox" id="javascript-news" name="news" value="Javascript">
+            <label class="newsletter-label" for="javascript-news"> Javascript News</label>
+          <div class="newsletter-text">Newsletter format</div>
+          <input type="radio" id="html-format" name="newsletter_format" value="html-format">
+            <label class="radio" for="html-format">HTML</label><br>
+            <input type="radio" id="plain-text" name="newsletter_format" value="plain-text">
+            <label class="radio" for="plain-text">Plain text</label><br>
+          <div class="newsletter-text">Other topics you'd like to hear about</div>
+          <textarea id="other-topics" name="Other_Topics"></textarea>
+          <button type="sign-up">Sign Up</button>
   </body>
+  <footer> Copyright The Code Review</footer>

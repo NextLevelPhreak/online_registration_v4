@@ -50,14 +50,21 @@ input[type="text"]::placeholder {
   padding-right: 10px;
   color:#afb3b6;
 }
+input[type="email"]::placeholder {
+  text-align: right;
+  padding-right: 10px;
+  color:#afb3b6;
+}
 input[type="text"]:focus {
   outline-color:#46698b;
   outline-width: 1px;
   outline-style: solid;
   box-shadow: 0 0 0 2pt #46698b;
 }
-.contact-information {
+legend {
   margin: 10px;
+  font-size: 130%;
+  font-weight: bolder;
 }
 .information {
   display: block;
@@ -66,6 +73,22 @@ input[type="text"]:focus {
   color:#7b8a97;
 }
 input[type="text"] {
+  border: none;
+  border-radius: 3px;
+  background-color: #eff0f1;
+  width: 100%;
+  line-height: 350%;
+  text-indent: 10px;
+}
+input[type="email"] {
+  border: none;
+  border-radius: 3px;
+  background-color: #eff0f1;
+  width: 100%;
+  line-height: 350%;
+  text-indent: 10px;
+}
+input[type="tel"] {
   border: none;
   border-radius: 3px;
   background-color: #eff0f1;
@@ -87,7 +110,7 @@ select:focus {
   box-shadow: 0 0 0 2pt #46698b;
 }
 #zip {
-  width: 50%;
+  width: 25%;
   margin-bottom: 20px;
 }
 .hr3 {
@@ -98,7 +121,7 @@ select:focus {
 .newsletter {
   margin-bottom: 10px;
 }
-.newsletter-text {
+.text-area {
   display: block;
   text-align: left;
   font-size: 1em;
@@ -162,6 +185,22 @@ footer {
     margin-bottom: 20px;
   }
   input[type="text"] {
+    line-height: 300%;
+    display: flex;
+    width: 60%;
+    float: right;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  input[type="tel"] {
+    line-height: 300%;
+    display: flex;
+    width: 60%;
+    float: right;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  input[type="email"] {
     line-height: 300%;
     display: flex;
     width: 60%;
